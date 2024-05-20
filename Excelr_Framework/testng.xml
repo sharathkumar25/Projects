@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="day01_12032024.Annotations"/>
+      <class name="day01_12032024.River"/>
+      <class name="day01_12032024.dependencyDemo"/>
+      <class name="day01_12032024.orangehrmforTestNG"/>
+      <class name="day01_12032024.GroupsDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
