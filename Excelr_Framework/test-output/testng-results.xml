@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T15:00:27 IST" name="Default suite" finished-at="2024-05-17T15:03:12 IST" duration-ms="165159">
+  <suite started-at="2024-05-21T00:43:16 IST" name="Default suite" finished-at="2024-05-21T00:46:37 IST" duration-ms="200968">
     <groups>
     </groups>
-    <test started-at="2024-05-17T15:00:27 IST" name="Default test" finished-at="2024-05-17T15:03:12 IST" duration-ms="165159">
+    <test started-at="2024-05-21T00:43:16 IST" name="Default test" finished-at="2024-05-21T00:46:37 IST" duration-ms="200968">
       <class name="Project1.POM_Calling">
-        <test-method signature="Callingobjects()[pri:0, instance:Project1.POM_Calling@6da21078]" started-at="2024-05-17T15:00:27 IST" name="Callingobjects" finished-at="2024-05-17T15:03:12 IST" duration-ms="165130" status="PASS">
+        <test-method signature="Callingobjects()[pri:0, instance:Project1.POM_Calling@6da21078]" started-at="2024-05-21T00:43:16 IST" name="Callingobjects" finished-at="2024-05-21T00:46:37 IST" duration-ms="200936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Callingobjects -->
