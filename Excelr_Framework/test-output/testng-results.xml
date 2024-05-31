@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-21T00:43:16 IST" name="Default suite" finished-at="2024-05-21T00:46:37 IST" duration-ms="200968">
+  <suite started-at="2024-05-31T23:06:43 IST" name="Default suite" finished-at="2024-05-31T23:07:44 IST" duration-ms="60232">
     <groups>
     </groups>
-    <test started-at="2024-05-21T00:43:16 IST" name="Default test" finished-at="2024-05-21T00:46:37 IST" duration-ms="200968">
-      <class name="Project1.POM_Calling">
-        <test-method signature="Callingobjects()[pri:0, instance:Project1.POM_Calling@6da21078]" started-at="2024-05-21T00:43:16 IST" name="Callingobjects" finished-at="2024-05-21T00:46:37 IST" duration-ms="200936" status="PASS">
+    <test started-at="2024-05-31T23:06:43 IST" name="Default test" finished-at="2024-05-31T23:07:44 IST" duration-ms="60232">
+      <class name="AutomationExercise.POM">
+        <test-method signature="calling_POM()[pri:0, instance:AutomationExercise.POM@6da21078]" started-at="2024-05-31T23:06:43 IST" name="calling_POM" finished-at="2024-05-31T23:07:44 IST" duration-ms="60188" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Callingobjects -->
-      </class> <!-- Project1.POM_Calling -->
+        </test-method> <!-- calling_POM -->
+      </class> <!-- AutomationExercise.POM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

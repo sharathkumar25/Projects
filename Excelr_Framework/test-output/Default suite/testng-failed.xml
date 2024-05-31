@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="projectexmaplepackages.project2">
+      <class name="AutomationExercise.POM">
         <methods>
-          <include name="login"/>
-          <include name="Practice_APITesting_usingMagento2"/>
-          <include name="Write_forus"/>
-          <include name="Subscribe"/>
+          <include name="calling_POM"/>
         </methods>
-      </class> <!-- projectexmaplepackages.project2 -->
+      </class> <!-- AutomationExercise.POM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
