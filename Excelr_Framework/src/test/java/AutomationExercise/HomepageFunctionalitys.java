@@ -33,6 +33,8 @@ public class HomepageFunctionalitys {
 	@FindBy (xpath="//div[@Class='single-widget']/child::form/child::button")WebElement emailBTN;
 	@FindBy (xpath="//div[@Class='alert-success alert']")WebElement successvalidate;
 	@FindBy (xpath="//ul[@Class='nav navbar-nav']/child::li[3]/a") WebElement CartpageBTN;
+	@FindBy (xpath="//a[@id='scrollUp']/i") WebElement ScrollupBTN;
+	@FindBy (xpath="//div[@Class='carousel-inner']/descendant::h2")WebElement Validate4;
 	
 	
 	public void Verify_ContactUSFORM() throws InterruptedException {
@@ -43,9 +45,7 @@ public class HomepageFunctionalitys {
 		CEmailBTN.sendKeys("Tomcruise01@gmail.com");
 		CSubjectBTN.sendKeys("Test-Project - P45");
 		CTextBTN.sendKeys("This email regards to test the Contact us functionality through regression testing");
-		CChoseFileBTN.click();
 		CChoseFileBTN.sendKeys("C:\\Users\\thand\\OneDrive\\Desktop\\Sharath\\jyothi\\1.png");
-		CChoseFileBTN.sendKeys(Keys.ENTER);
 		CSudmitBTN.click();
 		Alert a = driver.switchTo().alert();
 		System.out.println(a.getText());
@@ -92,7 +92,26 @@ public class HomepageFunctionalitys {
 		Assert.assertEquals(SuccessMessage, "You have been successfully subscribed!");
 		System.out.println(SuccessMessage);
 		js.executeScript("window.scrollBy(0,100)");
-		
+		HomepageBTN.click();
+	}
+	public void VerifyScrollUpusingArrowButton_andScrollDownfunctionality() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,9000)");
+		String VSubscription = Validate3.getText();
+		System.out.println(VSubscription);
+		Assert.assertEquals(VSubscription, "SUBSCRIPTION");
+		ScrollupBTN.click();
+	}
+	public void VerifyScrollUpwithoutArrow_buttonandScrollDownfunctionality() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,9000)");
+		String VSubscription = Validate3.getText();
+		System.out.println(VSubscription);
+		Assert.assertEquals(VSubscription, "SUBSCRIPTION");
+		js.executeScript("window.scrollBy(0,4000)");
+		js.executeScript("window.scrollBy(0,200)");
+		String fullfledgedpractice = Validate4.getText();
+		Assert.assertEquals(fullfledgedpractice, "Full-Fledged practice website for Automation Engineers");
 	}
 		
 }

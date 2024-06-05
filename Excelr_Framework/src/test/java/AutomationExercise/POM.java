@@ -21,29 +21,49 @@ public class POM {
 		Signup_Login_Page sl = new Signup_Login_Page(driver);
 		HomepageFunctionalitys hf = new HomepageFunctionalitys(driver);
 		ProductFunctionality pf = new ProductFunctionality(driver);
+		CartFunctionality cf = new CartFunctionality(driver);
 		
 		sl.GET_URL();
+		
 		sl.Registeruser();
 		sl.VerifyLogout();
 		sl.VerifyRegister_withExisting_Email();
 		sl.VerifyLogin_withInvaliddetails();
 		sl.VerifyLogin_withValiddetails();
 		
-		
-//		hf.Verify_ContactUSFORM();
-//		hf.Verify_TestcasesPage();
-		
-		
-//		pf.VerifyallProducts_Productdetailspage();
-//		pf.Searchproduct();
-//		hf.VerifySubscriptionin_Homepage();
-//		hf.VerifySubscriptionin_Cartpage();
+		hf.Verify_ContactUSFORM();
+		hf.Verify_TestcasesPage();
 		
 		
+		pf.VerifyallProducts_Productdetailspage();
+		pf.Searchproduct();
+		hf.VerifySubscriptionin_Homepage();
+		hf.VerifySubscriptionin_Cartpage();
+		
+		cf.AddProductin_Cart();
+		cf.VerifyProductQuantity_inCart();
+		cf.RemoveProducts_FromCart();
+		cf.PlaceOrder_RegisterwhileCheckout();
+		cf.DownloadInvoice_afterPurchase();
+		
+		hf.VerifyScrollUpusingArrowButton_andScrollDownfunctionality();
+		cf.PlaceOrder_RegisterbeforeCheckout();
+		cf.Placeorder_LoginbeforeCheckout();
+		pf.ViewCategoryProdcuts();
+		pf.ViewandCartBrandProdcuts();
+		pf.AddReviewonProduct();
+		cf.SearchProductsand_VerifyCartAfterLogin();
+		cf.Addtocart_fromRecommendeditems();
+		cf.Verifyaddressdetails_incheckoutpage();
+		hf.VerifyScrollUpwithoutArrow_buttonandScrollDownfunctionality();
+		Thread.sleep(5000);
+		driver.close();
+		//All 26 Cases completed
 		
 		
 		
-		//driver.close();
+		
+		
 	}
 
 }
