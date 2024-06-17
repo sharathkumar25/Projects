@@ -25,20 +25,20 @@ public class POM {
 		
 		sl.GET_URL();
 		
-//		sl.Registeruser();
-//		sl.VerifyLogout();
-//		sl.VerifyRegister_withExisting_Email();
-//		sl.VerifyLogin_withInvaliddetails();
-//		sl.VerifyLogin_withValiddetails();
-//		
-//		hf.Verify_ContactUSFORM();
-//		hf.Verify_TestcasesPage();
-//		
-//		
-//		pf.VerifyallProducts_Productdetailspage();
-//		pf.Searchproduct();
-//		hf.VerifySubscriptionin_Homepage();
-//		hf.VerifySubscriptionin_Cartpage();
+		sl.Registeruser();
+		sl.VerifyLogout();
+		sl.VerifyRegister_withExisting_Email();
+		sl.VerifyLogin_withInvaliddetails();
+		sl.VerifyLogin_withValiddetails();
+		
+		hf.Verify_ContactUSFORM();
+		hf.Verify_TestcasesPage();
+		
+		
+		pf.VerifyallProducts_Productdetailspage();
+		pf.Searchproduct();
+		hf.VerifySubscriptionin_Homepage();
+		hf.VerifySubscriptionin_Cartpage();
 		
 		cf.AddProductin_Cart();
 		cf.VerifyProductQuantity_inCart();
