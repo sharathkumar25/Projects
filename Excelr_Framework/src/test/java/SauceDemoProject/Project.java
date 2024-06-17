@@ -38,10 +38,7 @@ public class Project {
 		Assert.assertEquals(verifytitle, "Swag Labs");
 	}
 	@Test(priority = 2)
-	public void loginwith_Invaliddetails() throws IOException, InterruptedException {
-		//String Filepath="C:\\Users\\thand\\OneDrive\\Desktop\\Sharath\\jyothi\\SwagLabs.xlsx";
-		//FileInputStream ExcelFile = new FileInputStream(Filepath);
-		//XSSFWorkbook workbook = new XSSFWorkbook(ExcelFile);
+	public void loginwith_Invaliddetails() throws IOException {
 		ExcelFile = new FileInputStream(Filepath);
 		workbook = new XSSFWorkbook(ExcelFile);
 		XSSFSheet sheet = workbook.getSheet("Logindetails");
@@ -61,7 +58,7 @@ public class Project {
 		ExcelFile.close();
 	}
 	@Test (priority = 3)
-	public void Loginwith_Validdetails() throws IOException, InterruptedException {
+	public void Loginwith_Validdetails() throws IOException {
 		driver.navigate().refresh();
 		ExcelFile = new FileInputStream(Filepath);
 		workbook = new XSSFWorkbook(ExcelFile);
