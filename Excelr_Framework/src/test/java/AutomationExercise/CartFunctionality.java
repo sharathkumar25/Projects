@@ -20,10 +20,10 @@ public class CartFunctionality {
 	@FindBy (xpath="//ul[@Class='nav navbar-nav']/child::li[3]/a") WebElement CartpageBTN;
 	@FindBy (xpath="//ul[@Class='nav navbar-nav']/child::li[2]/a")WebElement ProductBTN;
 	@FindBy (xpath="//div[@class='features_items']/child::div[2]/child::div/div[1]/div/img")WebElement Hoverforcart;
-	@FindBy (xpath="//div[@class='features_items']/child::div[2]/child::div/div[1]/div/a/i")WebElement Hoveraddtocart;
+	@FindBy (xpath="//div[@class='features_items']/child::div[2]/child::div/div[1]/div/a")WebElement Hoveraddtocart;
 	@FindBy (xpath="//button[@class='btn btn-success close-modal btn-block']")WebElement ContShoppingBTN;
 	@FindBy (xpath="//div[@class='features_items']/child::div[3]/child::div/div[1]/div/img")WebElement Hoverforcart2;
-	@FindBy (xpath="//div[@class='features_items']/child::div[3]/child::div/div[1]/div/a/i")WebElement Hoveraddtocart2;
+	@FindBy (xpath="//div[@class='features_items']/child::div[3]/child::div/div[1]/div/a")WebElement Hoveraddtocart2;
 	@FindBy (xpath="//div[@class='modal-body']/child::p[2]/a")WebElement Hcartview;
 	@FindBy (xpath="//td[@Class='cart_price']/p")WebElement price1;
 	@FindBy (xpath="//td[@Class='cart_quantity']/button")WebElement qty1;

@@ -18,7 +18,8 @@ public class ProductFunctionality {
 	@FindBy (xpath="//ul[@Class='nav navbar-nav']/child::li[1]/a") WebElement HomepageBTN;
 	@FindBy (xpath="//ul[@Class='nav navbar-nav']/child::li[2]/a")WebElement ProductBTN;
 	@FindBy (xpath="//div[@Class='col-sm-9 padding-right']/child::div/child::h2")WebElement Validate1;
-	@FindBy (xpath="//div[@class='features_items']/child::div[2]/child::div/child::div[2]/ul/li/a")WebElement FirstproductBTN;
+	@FindBy (xpath="//div[@class='features_items']/child::div[2]/child::div/child::div[2]/ul/li/a"
+			+ "")WebElement FirstproductBTN;
 	@FindBy (xpath="//div[@Class='product-information']/child::h2")WebElement Validate2;
 	@FindBy (xpath="//div[@Class='product-information']/child::p")WebElement Validate4;
 	@FindBy (xpath="//div[@Class='product-information']/child::span/span")WebElement Validate5;

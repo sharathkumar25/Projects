@@ -1,91 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-06T01:01:51 IST" name="Default suite" finished-at="2024-06-06T01:03:36 IST" duration-ms="105457">
+  <suite started-at="2024-06-17T22:26:02 IST" name="Default suite" finished-at="2024-06-17T22:26:41 IST" duration-ms="39534">
     <groups>
     </groups>
-    <test started-at="2024-06-06T01:01:51 IST" name="Default test" finished-at="2024-06-06T01:03:36 IST" duration-ms="105457">
-      <class name="AutomationExercise.POM">
-        <test-method signature="calling_POM()[pri:0, instance:AutomationExercise.POM@6da21078]" started-at="2024-06-06T01:01:51 IST" name="calling_POM" finished-at="2024-06-06T01:03:36 IST" duration-ms="105363" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <i class="fa fa-shopping-cart"></i> is not clickable at point (587, 671). Other element would receive the click: <i class="fa fa-shopping-cart"></i>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35bce0e60928fff19cc3501f2eaa6c0d, clickElement {id=f.BC3F5A742C2A04F07C9A7770924EEB55.d.B2E39583E0D25B1B0609CB30F5EFC3DA.e.695}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\thand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52682/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (35bce0e60928fff19cc3501f2eaa6c0d)] -> xpath: //div[@class='features_items']/child::div[2]/child::div/div[1]/div/a/i]
-Session ID: 35bce0e60928fff19cc3501f2eaa6c0d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i class="fa fa-shopping-cart"></i> is not clickable at point (587, 671). Other element would receive the click: <i class="fa fa-shopping-cart"></i>
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [35bce0e60928fff19cc3501f2eaa6c0d, clickElement {id=f.BC3F5A742C2A04F07C9A7770924EEB55.d.B2E39583E0D25B1B0609CB30F5EFC3DA.e.695}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\thand\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52682/devtoo..., se:cdpVersion: 125.0.6422.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (35bce0e60928fff19cc3501f2eaa6c0d)] -> xpath: //div[@class='features_items']/child::div[2]/child::div/div[1]/div/a/i]
-Session ID: 35bce0e60928fff19cc3501f2eaa6c0d
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at AutomationExercise.CartFunctionality.AddProductin_Cart(CartFunctionality.java:117)
-at AutomationExercise.POM.calling_POM(POM.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+    <test started-at="2024-06-17T22:26:02 IST" name="Default test" finished-at="2024-06-17T22:26:41 IST" duration-ms="39534">
+      <class name="SauceDemoProject.Project">
+        <test-method is-config="true" signature="GetURL()[pri:0, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:00 IST" name="GetURL" finished-at="2024-06-17T22:26:02 IST" duration-ms="2004" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- calling_POM -->
-      </class> <!-- AutomationExercise.POM -->
+        </test-method> <!-- GetURL -->
+        <test-method signature="VerifyLoginpage()[pri:1, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:02 IST" name="VerifyLoginpage" finished-at="2024-06-17T22:26:02 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginpage -->
+        <test-method signature="loginwith_Invaliddetails()[pri:2, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:02 IST" name="loginwith_Invaliddetails" finished-at="2024-06-17T22:26:02 IST" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwith_Invaliddetails -->
+        <test-method signature="Loginwith_Validdetails()[pri:3, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:02 IST" name="Loginwith_Validdetails" finished-at="2024-06-17T22:26:05 IST" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginwith_Validdetails -->
+        <test-method signature="VerifyHomepage()[pri:4, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:05 IST" name="VerifyHomepage" finished-at="2024-06-17T22:26:05 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomepage -->
+        <test-method signature="verifyproductdetail()[pri:5, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:05 IST" name="verifyproductdetail" finished-at="2024-06-17T22:26:05 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyproductdetail -->
+        <test-method signature="AddtoCart()[pri:6, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:05 IST" name="AddtoCart" finished-at="2024-06-17T22:26:07 IST" duration-ms="2540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCart -->
+        <test-method signature="RemoveProduct_fromCart()[pri:7, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:07 IST" name="RemoveProduct_fromCart" finished-at="2024-06-17T22:26:13 IST" duration-ms="5513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveProduct_fromCart -->
+        <test-method signature="Addextraproducts_tocart()[pri:8, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:13 IST" name="Addextraproducts_tocart" finished-at="2024-06-17T22:26:13 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addextraproducts_tocart -->
+        <test-method signature="Checkout()[pri:9, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:13 IST" name="Checkout" finished-at="2024-06-17T22:26:14 IST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method signature="Checkout_overview()[pri:10, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:14 IST" name="Checkout_overview" finished-at="2024-06-17T22:26:15 IST" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout_overview -->
+        <test-method signature="Orderconfirmation()[pri:11, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:15 IST" name="Orderconfirmation" finished-at="2024-06-17T22:26:15 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Orderconfirmation -->
+        <test-method signature="SidemenuBarmenu()[pri:12, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:15 IST" name="SidemenuBarmenu" finished-at="2024-06-17T22:26:27 IST" duration-ms="12271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SidemenuBarmenu -->
+        <test-method signature="FilterOpitons()[pri:13, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:27 IST" name="FilterOpitons" finished-at="2024-06-17T22:26:34 IST" duration-ms="6582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FilterOpitons -->
+        <test-method signature="FooterSepcifications()[pri:14, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:34 IST" name="FooterSepcifications" finished-at="2024-06-17T22:26:34 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FooterSepcifications -->
+        <test-method signature="ScrollUpandDown()[pri:15, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:34 IST" name="ScrollUpandDown" finished-at="2024-06-17T22:26:36 IST" duration-ms="2029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScrollUpandDown -->
+        <test-method signature="Logout()[pri:16, instance:SauceDemoProject.Project@4310d43]" started-at="2024-06-17T22:26:36 IST" name="Logout" finished-at="2024-06-17T22:26:41 IST" duration-ms="5383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- SauceDemoProject.Project -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
