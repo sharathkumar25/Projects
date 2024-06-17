@@ -63,7 +63,6 @@ public class Project {
 	@Test (priority = 3)
 	public void Loginwith_Validdetails() throws IOException, InterruptedException {
 		driver.navigate().refresh();
-		Thread.sleep(1500);
 		ExcelFile = new FileInputStream(Filepath);
 		workbook = new XSSFWorkbook(ExcelFile);
 		XSSFSheet sheet = workbook.getSheet("Validetails");
@@ -115,7 +114,6 @@ public class Project {
 }
 	@Test(priority=6)
 	public void AddtoCart() throws InterruptedException {
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//div[@class='inventory_list']/child::div[1]/div[1]")).click();
 		driver.findElement(By.xpath("//div[@class='inventory_details_desc_container']/child::button")).click();
 		driver.findElement(By.xpath("//div[@class='header_container']/descendant::a")).click();
@@ -221,7 +219,6 @@ public class Project {
 	public void SidemenuBarmenu() throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='bm-burger-button']/child::button")).click();//sidemenubar
 		driver.findElement(By.xpath("//nav[@class='bm-item-list']/a")).click();//AllitemsBTN
-		Thread.sleep(3000);
 		driver.findElement(By.xpath("//div[@class='bm-burger-button']/child::button")).click();//sidemenubar
 		driver.findElement(By.xpath("//nav[@class='bm-item-list']/a[2]")).click();//AboutBTN
 		String Aboutpagetitle = driver.getTitle();
@@ -236,9 +233,7 @@ public class Project {
 		WebElement filter = driver.findElement(By.xpath("//div[@class='header_secondary_container']/child::div[3]/child::select"));
 		Select filtercheck = new Select(filter);
 		filtercheck.selectByIndex(1);
-		Thread.sleep(3000);
 		filtercheck.selectByIndex(2);
-		Thread.sleep(3000);
 		filtercheck.selectByIndex(3);
 	}
 	@Test(priority=14)
@@ -252,7 +247,6 @@ public class Project {
 	public void ScrollUpandDown() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,1000)");
-		Thread.sleep(2000);
 		js.executeScript("window.scrollBy(0,100)");
 	}
 	
@@ -260,7 +254,6 @@ public class Project {
 	public void Logout() throws InterruptedException {
 		driver.findElement(By.xpath("//div[@class='bm-burger-button']/child::button")).click();//sidemenubar
 		driver.findElement(By.xpath("//nav[@class='bm-item-list']/a[3]")).click();//logout
-		Thread.sleep(5000);
 		driver.close();
 	}
 	
